@@ -1,0 +1,42 @@
+0 wait Укажите дату
+1 keys 11-10-26{ENTER}
+0 wait Укажите время
+1 keys 12:00:00{ENTER}
+0 wait установку системы
+1 tap :kbd:ms1504:ROW11|Rus/Lat
+1 keys l
+1 keys {ENTER}
+0 wait Выберите 1 из режимов
+2 tap :kbd:ms1504:ROW10|2  Down
+1 keys {ENTER}
+0 wait Системного диска
+1 keys {ENTER}
+0 wait Встав. Рабоч.
+1 flop1 disks/msdos401r_install1.img
+1 flop2 disks/work_system.img
+2 keys {ENTER}
+0 wait (Y/N)
+1 tap :kbd:ms1504:ROW11|Rus/Lat
+1 keys n
+0 wait Диск установки 0
+1 flop1 disks/install0.img
+2 keys {ENTER}
+0 wait Диск установки 2
+0 wait Встав. Рабоч.
+1 flop1 disks/msdos401r_install2.img
+1 flop2 disks/work_utilities.img
+2 keys {ENTER}
+0 wait (Y/N)
+1 keys n
+0 wait Диск установки 0
+1 flop1 disks/install0.img
+2 keys {ENTER}
+0 wait системный диск
+3 flop1 disks/work_system.img
+2 keys {ENTER}
+0 wait ВЕРСИЯ 4.01
+3 keys {ENTER}
+0 wait A>
+1 hold :kbd:ms1504:ROW11|Rus/Lat (held)|1.0
+0.5 tap :kbd:ms1504:ROW7|F2
+2 keys ver{ENTER}

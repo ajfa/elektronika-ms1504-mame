@@ -1,0 +1,14 @@
+diff --git a/src/mame/mame.lst b/src/mame/mame.lst
+index c0e618fe..025a4f90 100644
+--- a/src/mame/mame.lst
++++ b/src/mame/mame.lst
+@@ -48546,6 +48546,9 @@ mk98
+ @source:ussr/ms0515.cpp
+ ms0515
+ 
++@source:ussr/ms1504.cpp
++ms1504
++
+ @source:ussr/ms6102.cpp
+ ms6102
+ 
